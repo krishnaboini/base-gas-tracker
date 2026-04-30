@@ -8,6 +8,7 @@ const provider = new ethers.JsonRpcProvider("https://mainnet.base.org");
 // Function to get gas price
 async function getGasPrice() {
   console.log("⛽ Fetching gas price from Base...");
+  console.log("Timestamp:", new Date().toLocaleString());
 
   try {
     const feeData = await provider.getFeeData();
